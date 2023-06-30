@@ -13,7 +13,8 @@ const morgan = require("morgan");
 
 
 //INIT
-const PORT = 3000;
+//recibe el puerto que node se la da, sino usa el 3000
+const PORT = process.env.PORT || 3000;
 const app = express();
 const DB = "mongodb+srv://NicolasSicard89:XgAuhyyiKixnm8oj@cluster0.ifbkskp.mongodb.net/?retryWrites=true&w=majority"
 
